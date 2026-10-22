@@ -699,9 +699,9 @@ nav.scrolled .btn-swap:hover{background:var(--red-2)}
 .share-top p strong{color:var(--grey);font-weight:600}
 .ab{margin-top:auto;padding-top:44px;display:flex;flex-direction:column}
 .ab-h{margin-bottom:6px;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#5a5a5a}
-.ab-row{display:grid;grid-template-columns:18px 1fr;align-items:start;gap:14px;padding:12px 0;border-top:1px solid #2a2a2a;font-size:15px;color:#efefef}
-.ab-row small{display:block;margin-top:4px;font-size:13px;color:#7a7a7a}
-.ab-row i{width:18px;height:18px;margin-top:2px;background:var(--red);transform:scale(0);transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
+.ab-row{display:grid;grid-template-columns:18px 1fr auto;align-items:center;gap:14px;padding:12px 0;border-top:1px solid #2a2a2a;font-size:15px;color:#efefef}
+.ab-row b{font-size:14px;font-weight:400;color:#949494;text-align:right}
+.ab-row i{width:18px;height:18px;background:var(--red);transform:scale(0);transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
 .ab.on .ab-row i{transform:none}
 .share-src{font-size:12px;color:#5a5a5a;margin-top:10px}
 .feats{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--canvas)}
@@ -1028,7 +1028,7 @@ footer{background:var(--ink);color:var(--grey);padding:100px 0}
   .price-partner-badge{position:static;margin:0 0 16px!important}
   .work{grid-template-columns:1fr}
   .promo__timer-unit{min-width:80px;padding:14px 18px 10px}.promo__timer-num{font-size:44px}.promo__timer-sep{font-size:40px}
-  .feats{grid-template-columns:1fr}.share{padding:28px 20px}.share-top b{font-size:80px;letter-spacing:-4px}.share-top b small{font-size:40px}.share-top{flex-direction:column}
+  .feats{grid-template-columns:1fr}.share{padding:28px 20px}.ab-row{gap:10px;font-size:14px}.ab-row b{font-size:13px}.share-top b{font-size:80px;letter-spacing:-4px}.share-top b small{font-size:40px}.share-top{flex-direction:column}
   .channels{grid-template-columns:1fr}
   form{grid-template-columns:1fr}
   .case{margin-bottom:60px}
@@ -1261,7 +1261,7 @@ footer{background:var(--ink);color:var(--grey);padding:100px 0}
 <!-- НОВОЕ: скорость = заявки -->
 <section class="sec"><div class="wrap">
   <div class="head">
-    <div><p class="eyebrow eb-wide-d fu">Скорость и&nbsp;SEO</p><h2 class="rv">Быстрые сайты с SEO‑основой — <em>больше заказов без доработок</em></h2></div>
+    <div><p class="eyebrow eb-wide-d fu">Скорость и&nbsp;SEO</p><h2 class="rv">Быстрый сайт&nbsp;— <em>выше в&nbsp;поиске и&nbsp;больше заказов</em></h2></div>
     <p class="descr fu d2">Собираем сайт на чистом коде без лишних скриптов и плагинов: каталог и карточки товаров открываются быстро, зелёная зона Core Web Vitals и SEO‑структура с первого дня. Покупатели не уходят, не дождавшись загрузки, поисковики поднимают сайт выше, а вам не нужно ничего переделывать — сайт просто приносит заказы.</p>
   </div>
   <div class="speed fu d2" id="speed">
@@ -1354,25 +1354,25 @@ footer{background:var(--ink);color:var(--grey);padding:100px 0}
 <!-- НОВОЕ: манифест -->
 <section class="sec" id="why"><div class="wrap">
   <div class="head">
-    <div><p class="eyebrow eb-wide fu">Почему сайт от нас</p><h2 class="rv">Покупатель доходит <em>до&nbsp;оплаты</em></h2></div>
-    <p class="descr fu d2">Проектируем каталог, корзину и&nbsp;оформление заказа так, чтобы покупателю было просто дойти до&nbsp;оплаты: итоговая сумма видна сразу, регистрация не&nbsp;нужна, а&nbsp;оплатить можно удобным способом. Поэтому из&nbsp;тех&nbsp;же посетителей вы&nbsp;получаете больше заказов.</p>
+    <div><p class="eyebrow eb-wide fu">Почему интернет-магазин от&nbsp;нас</p><h2 class="rv">Растим продажи <em>по&nbsp;данным, а&nbsp;не&nbsp;наугад</em></h2></div>
+    <p class="descr fu d2">С&nbsp;первого дня подключаем аналитику, CRM и&nbsp;рекламу. Видно, откуда приходят покупатели, что они смотрят и&nbsp;на&nbsp;каком шаге уходят. Улучшаем самое слабое место&nbsp;— и&nbsp;конверсия магазина растёт.</p>
   </div>
   <div class="why-grid">
     <div class="share fu">
       <div class="share-top">
-        <b>+<span data-count="35">35</span><small>%</small></b>
-        <p><strong>к&nbsp;конверсии</strong> может дать удобное оформление заказа. Именно его мы&nbsp;и&nbsp;проектируем.</p>
+        <b>1</b>
+        <p><strong>система:</strong> интернет-магазин, реклама, CRM и&nbsp;аналитика работают вместе, а&nbsp;результат мы&nbsp;оцениваем по&nbsp;заказам и&nbsp;конверсии.</p>
       </div>
-      <div class="ab" id="ab" role="img" aria-label="Что мы делаем, чтобы покупатель дошёл до оплаты: итоговая сумма с доставкой видна сразу в корзине; курьер и пункты выдачи, срок доставки понятен заранее; заказ без регистрации, в пару шагов; короткая форма: только нужные поля; тестируем корзину и оплату до запуска; карты, сбп, оплата частями и при получении">
-        <p class="ab-h">Как мы&nbsp;доводим покупателя до&nbsp;оплаты</p>
-        <div class="ab-row"><i></i><span>Итоговая сумма с&nbsp;доставкой видна сразу в&nbsp;корзине<small>убирает причину отказа «неожиданные доплаты»&nbsp;— 40%</small></span></div>
-        <div class="ab-row"><i></i><span>Курьер и&nbsp;пункты выдачи, срок доставки понятен заранее<small>убирает причину отказа «долгая доставка»&nbsp;— 20%</small></span></div>
-        <div class="ab-row"><i></i><span>Заказ без&nbsp;регистрации, в&nbsp;пару шагов<small>убирает причину отказа «обязательная регистрация»&nbsp;— 18%</small></span></div>
-        <div class="ab-row"><i></i><span>Короткая форма: только нужные поля<small>убирает причину отказа «длинное оформление»&nbsp;— 17%</small></span></div>
-        <div class="ab-row"><i></i><span>Тестируем корзину и&nbsp;оплату до&nbsp;запуска<small>убирает причину отказа «ошибки на&nbsp;сайте»&nbsp;— 17%</small></span></div>
-        <div class="ab-row"><i></i><span>Карты, СБП, оплата частями и&nbsp;при получении<small>убирает причину отказа «мало способов оплаты»&nbsp;— 9%</small></span></div>
+      <div class="ab" id="ab" role="img" aria-label="Путь покупателя под контролем аналитики: Реклама — откуда приходят покупатели; Каталог — какие товары смотрят; Корзина — что добавляют и где уходят; Оформление и оплата — удобно с телефона; CRM — каждый заказ у менеджера; Повторные покупки — рассылки и бонусы">
+        <p class="ab-h">Путь покупателя под&nbsp;контролем</p>
+        <div class="ab-row"><i></i><span>Реклама</span><b>откуда приходят покупатели</b></div>
+        <div class="ab-row"><i></i><span>Каталог</span><b>какие товары смотрят</b></div>
+        <div class="ab-row"><i></i><span>Корзина</span><b>что добавляют и&nbsp;где уходят</b></div>
+        <div class="ab-row"><i></i><span>Оформление и&nbsp;оплата</span><b>удобно с&nbsp;телефона</b></div>
+        <div class="ab-row"><i></i><span>CRM</span><b>каждый заказ у&nbsp;менеджера</b></div>
+        <div class="ab-row"><i></i><span>Повторные покупки</span><b>рассылки и&nbsp;бонусы</b></div>
       </div>
-      <p class="share-src">Baymard Institute, 2025: средний потенциал роста конверсии крупных интернет-магазинов за&nbsp;счёт оформления заказа и&nbsp;доли покупателей, которые отказались от&nbsp;покупки по&nbsp;каждой причине.</p>
+      <p class="share-src">Каждый шаг виден в&nbsp;Яндекс Метрике и&nbsp;CRM, поэтому мы&nbsp;точно знаем, что улучшать.</p>
     </div>
     <div class="feats">
       <div class="feat fu"><div class="fn">01<span class="badge">1С · МойСклад</span></div><h3>Цены и&nbsp;остатки всегда актуальны</h3><p>Товары, цены и&nbsp;остатки обновляются из&nbsp;учётной системы сами, а&nbsp;заказы попадают в&nbsp;неё без&nbsp;ручного ввода.</p></div>
@@ -1792,7 +1792,7 @@ document.querySelectorAll("[data-count]").forEach((el) => cio.observe(el));
   new IntersectionObserver(([e]) => { if (e.isIntersecting && !playing) play(); }, { threshold: .15 }).observe(box);
 })();
 
-/* «Почему сайт от нас»: что делаем, чтобы покупатель дошёл до оплаты; квадратики появляются по строкам */
+/* «Почему интернет-магазин от нас»: путь покупателя, квадратики появляются по строкам */
 (() => {
   const ab = document.getElementById("ab");
   ab.querySelectorAll(".ab-row i").forEach((i, r) => { i.style.transitionDelay = `${r * 90 / 1000}s`; });
